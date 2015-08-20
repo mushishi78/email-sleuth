@@ -1,0 +1,6 @@
+{
+  "name": "Email Sleuth",
+  "description": "Email Sleuth is a small server for tracking email recipients",
+  "keywords": ["email", "tracking",
+  "addons": ["mongolab:sandbox"]
+}
