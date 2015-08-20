@@ -12,9 +12,9 @@ GET requests at the root return a 1x1 transparent gif. It expects an `id` parame
 
 All other parameters given will also be stored, as well as the ip of the request and a country and city derived from the ip address using [geoip](https://github.com/cjheath/geoip) and [Maxmind](https://www.maxmind.com/en/home).
 
-To get at the collected data, go to the `\csv` route, log in with the admin credentials supplied as environment variables and a .csv file will be downloaded.
+To get at the collected data, go to the `/csv` route, log in with the admin credentials supplied as environment variables and a .csv file will be downloaded.
 
-To clear all the previously collected data, go to the `\clear` route, log in with the admin credentials and all the data will be deleted.
+To clear all the previously collected data, go to the `/clear` route, log in with the admin credentials and all the data will be deleted.
 
 ## Deployment
 
