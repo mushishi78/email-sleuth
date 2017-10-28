@@ -9,7 +9,7 @@ Mongo::Logger.logger.level = Logger::WARN
 class DatabaseNotFound < StandardError; end
 
 configure do
-  mongo = Mongo::Client.new(ENV['MONGOLAB_URI'])
+  mongo = Mongo::Client.new(ENV['MONGODB_URI'])
   fail(DatabaseNotFound) if mongo.cluster.servers.empty?
 
   set :db, mongo
